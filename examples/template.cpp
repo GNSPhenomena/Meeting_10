@@ -24,7 +24,7 @@ int distance()
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
-  distance = (double)(duration/2) / 29.1;
+  distance = (duration/2) / 29.1;
   //Serial.print("Distance: ");
   //Serial.println(distance);
   return distance;
